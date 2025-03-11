@@ -8,6 +8,7 @@ public class PlayerBehavior : MonoBehaviour
     public float RotateSpeed = 75f;
     public float JumpForce = 5f;
     public float MouseSensitivity = 2f;
+    public Transform player;
 
     private float _vInput;
     private float _hInput;
@@ -24,6 +25,7 @@ public class PlayerBehavior : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
         _cameraTransform = Camera.main.transform; // Gets the main camera location
         _rb.drag = groundDrag; //apply grounding to reduce sliding
+        player.GetComponent<Renderer>().material.color = Color.blue; //player is indicated
     }
 
     void Update()
