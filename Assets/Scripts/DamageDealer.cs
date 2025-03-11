@@ -28,7 +28,7 @@ public class DamageDealer : MonoBehaviour
     {
         if (other.transform.tag == "enemy")
         {
-
+            Destroy(other.gameObject);
         }
     }
 
