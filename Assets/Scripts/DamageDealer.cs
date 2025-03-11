@@ -26,7 +26,7 @@ public class DamageDealer : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.transform.tag == "enemy")
+        if (other.transform.tag == "Enemy")
         {
             Destroy(other.gameObject);
         }
