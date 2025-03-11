@@ -1,1 +1,1 @@
-camera and player behaviors - Melanie Galindo Waugh
+camera and player behaviors; enemy behavior - Melanie Galindo Waugh
