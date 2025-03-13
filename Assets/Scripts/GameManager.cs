@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public float timeRemaining = 91f;
+    public float time = 0;
 
     public TextMeshProUGUI healthDisplay;
     public TextMeshProUGUI scoreDisplay;
@@ -38,9 +38,9 @@ public class GameManager : MonoBehaviour
         //if (m_IsPlayerAtExit || m_IsPlayerCaught)
         //    return;
 
-        timeRemaining -= Time.deltaTime;
-        int minutes = Mathf.FloorToInt(timeRemaining / 60);
-        int seconds = Mathf.FloorToInt(timeRemaining % 60);
+        time += Time.deltaTime;
+        int minutes = Mathf.FloorToInt(time / 60);
+        int seconds = Mathf.FloorToInt(time % 60);
 
         timerDisplay.text = string.Format("TIME: {0:00}:{1:00}", minutes, seconds);
     }

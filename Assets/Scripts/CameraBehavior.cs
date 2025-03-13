@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraBehavior : MonoBehaviour
 {
-    public Vector3 CamOffset = new Vector3(0f, 7, -10);
+    public Vector3 CamOffset = new Vector3(0f, 14, -5);
     private Transform _target;
     private Rigidbody _rb;
 
