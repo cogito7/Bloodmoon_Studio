@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class PackBehavior : MonoBehaviour
 {
-    public float xSpread;
-    public float ySpread;
-    public float zSpread;
-    public Transform centerPoint;
-    public float rotSpeed;
-    public bool rotateClockwise;
+    public GameObject leader;
+    public float speed;
 
     private void FixedUpdate()
     {
@@ -25,6 +21,11 @@ public class PackBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        SwarmAround();
+    }
+
+    public void SwarmAround()
+    {
+        transform.RotateAround(leader.transform.position, Vector3.up, speed * Time.deltaTime);
     }
 }
