@@ -1235,6 +1235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swarmerPrefab: {fileID: 7979704098328631361, guid: b854247a9b77e874e9d4105ecf0ae9e5, type: 3}
   swarmerInterval: 3.5
+  player: {fileID: 2117428376}
 --- !u!1 &2038631933
 GameObject:
   m_ObjectHideFlags: 0

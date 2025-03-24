@@ -11,7 +11,7 @@ public class EnemyBehavior : MonoBehaviour
 
     public float speed = 2f;
     public int t = 0;
-    //private NavMeshAgent agent;
+    private NavMeshAgent agent;
 
     private bool chasingPlayer = true;
 
@@ -19,7 +19,7 @@ public class EnemyBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //agent = GetComponent<NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();
         player.GetComponent<Renderer>().material.color = Color.blue; //player is indicated
 
 
@@ -32,7 +32,7 @@ public class EnemyBehavior : MonoBehaviour
         if (chasingPlayer)
         {
             Debug.Log("Chasing Player "+ player.position);
-            //agent.SetDestination(player.position);
+            agent.SetDestination(player.position);
         }
 
     }
