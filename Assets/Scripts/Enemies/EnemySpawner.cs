@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject swarmerPrefab;
    
-    [SerializeField] private float swarmerInterval = 3.5f;
+    [SerializeField] private float swarmerInterval = 1.5f;
 
     public Transform player;
 
