@@ -20,20 +20,19 @@ public class EnemyBehavior : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        player.GetComponent<Renderer>().material.color = Color.blue; //player is indicated
-
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         //locate player and chase if within close proximity
-        if (chasingPlayer)
+        if (chasingPlayer && player != null)
         {
             Debug.Log("Chasing Player "+ player.position);
             agent.SetDestination(player.position);
         }
+        
 
     }
     

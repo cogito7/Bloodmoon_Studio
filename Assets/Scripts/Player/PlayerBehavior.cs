@@ -22,6 +22,7 @@ public class PlayerBehavior : MonoBehaviour
 
     void Start()
     {
+        player.GetComponent<Renderer>().material.color = Color.blue; //player is indicated
         _rb = GetComponent<Rigidbody>();
         _cameraTransform = Camera.main.transform; // Gets the main camera location
         _rb.drag = groundDrag; //apply grounding to reduce sliding
