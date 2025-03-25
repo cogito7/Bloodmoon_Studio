@@ -6,15 +6,18 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public float timeRemaining = 91f;
+    private int score;
 
     public TextMeshProUGUI healthDisplay;
     public TextMeshProUGUI scoreDisplay;
     public TextMeshProUGUI timerDisplay;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        score = 0;
+        scoreDisplay.text = "Score: " + score;
     }
 
     // Update is called once per frame
@@ -28,9 +31,10 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void ScoreUpdate()
+    public void ScoreUpdate(int scoreCount)
     {
-
+        score = score + scoreCount;
+        scoreDisplay.text = "Score: " + score;
     }
 
     public void TimerUpdate()

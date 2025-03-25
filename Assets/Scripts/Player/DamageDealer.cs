@@ -35,8 +35,10 @@ public class DamageDealer : MonoBehaviour
         {
             healthManager.TakeDamage(damage);
             Destroy(other.gameObject);
-            
+
         }
+
+       
         
 
     }
