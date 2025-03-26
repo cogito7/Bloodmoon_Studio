@@ -21,6 +21,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))  // bullet hits an enemy and enemy takes damage
         {
+            GameObject.Find("GameManager").GetComponent<GameManager>().ScoreUpdate(1);
             EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
             {

@@ -48,4 +48,5 @@ public class GameManager : MonoBehaviour
 
         timerDisplay.text = string.Format("TIME: {0:00}:{1:00}", minutes, seconds);
     }
+
 }
