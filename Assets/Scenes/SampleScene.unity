@@ -927,7 +927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c964f3d0dff07224caef12b65f26428d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 91
+  time: 0
   healthDisplay: {fileID: 1812890829}
   scoreDisplay: {fileID: 2038631935}
   timerDisplay: {fileID: 1447613690}
@@ -1681,9 +1681,8 @@ GameObject:
   - component: {fileID: 2117428377}
   - component: {fileID: 2117428380}
   - component: {fileID: 2117428381}
-  - component: {fileID: 2117428383}
-  - component: {fileID: 2117428382}
   - component: {fileID: 2117428384}
+  - component: {fileID: 2117428385}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1825,30 +1824,6 @@ MonoBehaviour:
   MouseSensitivity: 2
   player: {fileID: 2117428376}
   groundDrag: 4
---- !u!114 &2117428382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2117428375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1628350be79bfcf4c9c6a4f6362818ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2117428383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2117428375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935719c48c3716e43aa02cf6b478c987, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2117428384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1863,6 +1838,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myType: 0
   powerLevel: 0
+--- !u!114 &2117428385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117428375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4630de8d37add1142b306383342b91f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2117428376}
+  baseSpeed: 20
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
